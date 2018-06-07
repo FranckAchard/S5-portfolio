@@ -48,6 +48,13 @@ export class MenuService {
       content: 'lorem ipsum',
       position: 'footer'
     },
+    {
+      id: MenuType.PARTNER,
+      label: 'Partenaires',
+      title: 'Partenaires',
+      content: 'lorem ipsum',
+      position: 'footer'
+    },
 
   ];
 

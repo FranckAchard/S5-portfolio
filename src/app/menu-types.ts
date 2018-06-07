@@ -3,5 +3,6 @@ export enum MenuType {
     REAL = 'Réalisations',
     CONTACT = 'Contact',
     MENTIONS = 'Mentions',
-    CONTRIB = 'Contributeurs'
+    CONTRIB = 'Contributeurs',
+    PARTNER = 'Partenaires'
 }
