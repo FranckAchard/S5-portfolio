@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   }
 
   selectMenu(name) {
-    console.log(name);
+    // console.log(name);
     this.menuService.selectedMenu = name;
   }
 

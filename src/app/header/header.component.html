@@ -1,22 +1,19 @@
 <!-- <ul>
   <li (click) = "selectMenu('Bio')"
-    [style.color]="menuService.selectedMenu == 'Bio' ? 'red' : 'blue'">
-    Bio
-    </li>
-  <li (click) = "selectMenu('Réalisations')"
-    [style.color]="menuService.selectedMenu == 'Réalisations' ? 'red' : 'blue'">
-    Réalisations
-  </li>
-  <li (click) = "selectMenu('Contact')"
-    [style.color]="menuService.selectedMenu == 'Contact' ? 'red' : 'blue'">
-    Contact
-  </li>
+  [style.color]="menuService.selectedMenu == 'Bio' ? 'red' : 'blue'">
+  Bio
+</li>
+<li (click) = "selectMenu('Réalisations')"
+[style.color]="menuService.selectedMenu == 'Réalisations' ? 'red' : 'blue'">
+Réalisations
+</li>
+<li (click) = "selectMenu('Contact')"
+[style.color]="menuService.selectedMenu == 'Contact' ? 'red' : 'blue'">
+Contact
+</li>
 </ul> -->
-<ul>
-  <li 
-    *ngFor="let menu of menuService.getList('header')"
-    [style.color]="menuService.selectedMenu == menu.id ? 'red' : 'blue'"
-    (click)="selectMenu(menu.id)"
-    > {{menu.label}}
-  </li>
-</ul>
+<mat-toolbar [color]="'primary'" fxLayout="row" fxLayoutAlign="space-around center">
+  <span *ngFor="let menu of menuService.getList('header')" [style.color]="menuService.selectedMenu == menu.id ? 'pink' : 'white'"
+    (click)="selectMenu(menu.id)"> {{menu.label}}
+  </span>
+</mat-toolbar>
