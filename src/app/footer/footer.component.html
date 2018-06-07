@@ -1,0 +1,10 @@
+<ul>
+    <li (click) = "selectMenu('Mentions')"
+      [style.color]="menuService.selectedMenu == 'mentions' ? 'red' : 'blue'">
+      Mentions
+      </li>
+    <li (click) = "selectMenu('Contributeurs')"
+      [style.color]="menuService.selectedMenu == 'contrib' ? 'red' : 'blue'">
+      Contributeurs
+    </li>
+  </ul>
